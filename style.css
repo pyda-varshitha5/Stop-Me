@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+.container {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.time {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+#start {
+  background: #22c55e;
+}
+
+#pause {
+  background: #facc15;
+  color: black;
+}
+
+#reset {
+  background: #ef4444;
+}
+
+#lap {
+  background: #3b82f6;
+}
+
+.laps-container {
+  margin-top: 30px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.laps-container h2 {
+  margin-bottom: 15px;
+}
+
+#laps {
+  list-style: none;
+}
+
+#laps li {
+  background: rgba(255,255,255,0.15);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .time {
+    font-size: 38px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
