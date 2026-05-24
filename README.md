@@ -1,4 +1,4 @@
-# SCT_WD_2
+Stop-Me
 
 This project is developed as part of the SkillCraft Technology Web Development Internship.
 
